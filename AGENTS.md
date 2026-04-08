@@ -10,7 +10,6 @@
 Prompt/                        # 8 个 Prompt 模板（不可运行的参考文档）
 ├── 会议发言提取_{模型}版.md   # 4 个模型：Claude / Gemini / GLM / Qwen
 └── 会议纪要提取_{模型}版.md   # 同上
-文本-A8411D47DF72-1.txt        # 真实转写样本（926 行，UTF-8，微信录音格式）
 meeting-extract/               # V1 Skill 实现
 ├── SKILL.md                   # 工作流定义（消费链路、用户交互、错误处理）
 ├── bin/
