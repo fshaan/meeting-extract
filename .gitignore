@@ -1,0 +1,11 @@
+.DS_Store
+
+# 私人转写文件（真实会议录音）
+文本-*.txt
+*.录音.txt
+
+# 测试数据（非代码测试文件）
+test/fixtures/
+tests/fixtures/
+*.fixture.*
+.gspowers/

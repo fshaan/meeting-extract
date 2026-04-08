@@ -1,0 +1,13 @@
+{
+  "name": "meeting-extract",
+  "version": "0.2.0",
+  "description": "中文会议转写文件提取 Claude Code Skill",
+  "scripts": {
+    "detect-format": "bun run bin/detect-format.ts",
+    "parse-speakers": "bun run bin/parse-speakers.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
