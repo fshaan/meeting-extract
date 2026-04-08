@@ -29,7 +29,7 @@ npx skills add fshaan/meeting-extract -g -y
 或自然语言：
 
 ```
-帮我提取这个会议里陕飞的发言观点，文件是 转写文件.txt
+帮我提取这个会议里张三的发言观点，文件是 转写文件.txt
 生成会议纪要，文件 ./会议录音.txt
 ```
 
