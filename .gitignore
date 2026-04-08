@@ -8,3 +8,4 @@
 test/fixtures/
 tests/fixtures/
 *.fixture.*
+.gspowers/
