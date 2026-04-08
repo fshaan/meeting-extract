@@ -46,8 +46,8 @@ bun run {SKILL_DIR}/bin/parse-speakers.ts "<文件路径>"
 使用 AskUserQuestion 让用户选择：
 
 **问题 1: 输出类型**
-- 发言提取：针对特定人员，第一人称视角还原观点体系
-- 会议纪要：泛用型六模块结构化纪要
+- 发言提取：针对特定人员，第三人称客观视角提炼观点体系
+- 会议纪要：泛用型七章节结构化纪要
 
 **问题 2（仅发言提取时）: 目标人员**
 - 列出步骤 3 检测到的所有说话人作为选项
@@ -65,7 +65,7 @@ bun run {SKILL_DIR}/bin/parse-speakers.ts "<文件路径>"
 - `{{speaker_name}}` → 用户选择的目标人员姓名（仅发言提取）
 - `{{speakers_list}}` → 从步骤 3 的 JSON 构造，格式为 "张三、李四、王五"
 - `{{speaker_ratio}}` → 从步骤 3 的 JSON 计算：`segments / total_segments × 100%`（仅发言提取）
-- `{{transcript}}` → 使用 Read 工具读取转写文件全文
+- `{{transcript}}` → 读取转写文件全文。**重要：使用 Bash `cat "<文件路径>"` 获取文件内容**，不要使用 Read 工具（Read 可能因同一会话内重复读取同一文件而被缓存拦截返回空结果）
 
 ### Step 6: 执行生成
 
@@ -90,7 +90,7 @@ bun run {SKILL_DIR}/bin/parse-speakers.ts "<文件路径>"
    │                                           │
    └──→ Bash: parse-speakers.ts ──→ JSON stdout (说话人+统计)
                      │
-转写文件 ──→ Read: 全文内容 ──────────────────┐
+转写文件 ──→ Bash cat: 全文内容 ────────────────┐
                                                │
 prompts/*.md ──→ Read: 模板指令 ───────────────┤
                                                ▼
