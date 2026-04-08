@@ -81,6 +81,10 @@ meeting-extract/               # Skill 实现
 - [Bun](https://bun.sh) 1.3.10+
 - Claude Code（复用当前模型，不需要外部 API）
 
+## Contributing
+
+参见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## License
 
 MIT
