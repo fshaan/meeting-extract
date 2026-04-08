@@ -71,7 +71,9 @@ meeting-extract/               # Skill 实现
 ├── SKILL.md                   # 工作流定义
 ├── bin/
 │   ├── detect-format.ts       # 转写格式检测
-│   └── parse-speakers.ts      # 说话人识别与统计
+│   ├── detect-format.test.ts  # 格式检测测试
+│   ├── parse-speakers.ts      # 说话人识别与统计
+│   └── parse-speakers.test.ts # 说话人识别测试
 ├── prompts/
 │   ├── speaker-extract.md     # 发言提取 Prompt（Claude 版）
 │   └── meeting-summary.md     # 会议纪要 Prompt（Claude 版）
